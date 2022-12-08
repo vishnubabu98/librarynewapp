@@ -14,6 +14,7 @@ import { IssueBookComponent } from './issue-book/issue-book.component';
 import { ViewBookComponent } from './view-book/view-book.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { Route, RouterModule, Routes } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 
 const myRoute:Routes=[
   {
@@ -71,7 +72,8 @@ const myRoute:Routes=[
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(myRoute)
+    RouterModule.forRoot(myRoute),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
